@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>动态数组 | 伤感小巫神</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xuan0209.github.io/favicon.ico?v=1751705639248">
+<link rel="stylesheet" href="https://xuan0209.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="vector是一个向量接触到线性代数
+向量等同于数组
+vector是C++中动态数组的容器
+vector&lt;数组类型&gt;例如:vector为int类型的动态数组
+C++中vector的实现在一个头文件中，在代码开头引入这个头文件。
+..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xuan0209.github.io">
+        <img src="https://xuan0209.github.io/images/avatar.png?v=1751705639248" class="site-logo">
+        <h1 class="site-title">伤感小巫神</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            笔记
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            伤感小巫神
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      原神抽卡别歪啊，10连3金缠上我
+    </div>
+    <div class="site-footer">
+      友情链接 <a href="https://home.zhikulego.cn" target="_blank">智库乐高</a> | <a class="rss" href="https://xuan0209.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">动态数组</h2>
+            <div class="post-date">2025-04-19</div>
+            
+              <div class="feature-container" style="background-image: url('https://xuan0209.github.io/post-images/dong-tai-shu-zu.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>vector是一个向量接触到线性代数<br>
+向量等同于数组<br>
+vector是C++中动态数组的容器<br>
+vector&lt;数组类型&gt;例如:vector<int>为int类型的动态数组<br>
+C++中vector的实现在一个<vector>头文件中，在代码开头引入这个头文件。<br>
+#include <vector><br>
+C++ 中直接构造一个vector的语句为:</p>
+<pre><code>			vector&lt;T&gt; vec;   
+</code></pre>
+<p>这样就定义了一个名为vec的储存T类型数据的动态数组。这里的T表示数组要储存的数据类型，它可以是int、double、string、或者其他自定义的数据类型等等。初始的时候vec是空的<br>
+C++ 中通过push back()函数在数组最后面插入一个新的元素<br>
+获取长度并且访问元素:<br>
+C++中通过size()函数获取vector的长度，通过几操作直接访问vector中的元素，下标访问元素的方式和数组是一样的</p>
+<p>#include <vector><br>
+#include <iostream></p>
+<p>using namespace std;</p>
+<p>int main0{</p>
+<p>vector<int>vec; //初始:[]</p>
+<p>vec.push back(1);//当前:[1]</p>
+<p>vec.push back(2); //当前:[1,2]<br>
+vec.push back(3); // 当前:[1,2, 3]</p>
+<p>vec[1] = 3; // 当前:[1, 3, 3]</p>
+<p>vec[2]= 2; // 当前:[1,3,2]</p>
+<p>for (inti= 0;i&lt; vec.size(); i+ +){</p>
+<pre><code>cout &lt;&lt; vec[i] &lt;&lt; endl;
+</code></pre>
+<p>}<br>
+return 0;<br>
+}<br>
+修改元素:</p>
+<pre><code>C++中修改vector中某个元素，只需要用=给它赋值就好，比如vec[1]= 3。
+</code></pre>
+<p>注意，如果一个vector的长度为 n，现在能直接进行修改的最靠后的元素的下标为 n-1。<br>
+例如，当vec的当前长度为6的时候，就不可以直接通过写vec[6]=3这样的方式去给一个尚不存在的元素进行赋值;正确的做法是，继续在最后插入元素:<br>
+vec.push back(6);<br>
+清空:</p>
+<pre><code>C++中都只需要调用clear()函数就可清空vector。
+</code></pre>
+<p>C++中vector的clear()只是清空vector，并不会释放开辟的内存，用下面的方法可以释放vec的内存:</p>
+<pre><code>													// vector&lt;int&gt; vec,vector&lt;int&gt;().swap(vec);
+</code></pre>
+<p>C++vector函数总结:</p>
+<pre><code>	函数		      功能
+
+     push_back		在末尾加入一个元素
+
+     pop_back	        在末尾弹出一个元素
+      size	            获取长度	      
+      clear                  清空
+</code></pre>
+<p>用动态数组储存自定义数据<br>
+:动态数组不仅仅可以储存基本的数据类型，还能储存自定义数据类型，比如结构体。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xuan0209.github.io/post/lian-biao/">
+                  <h3 class="post-title">
+                    链表
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

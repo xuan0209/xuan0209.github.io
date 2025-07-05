@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>C++中常见的排序方法 | 伤感小巫神</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xuan0209.github.io/favicon.ico?v=1751705639248">
+<link rel="stylesheet" href="https://xuan0209.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="冒泡排序法（稳定）:
+例如：3214
+第一趟：2134
+第二趟：1234
+稳定：稳定的是不打乱数的次序
+选择排序法(不稳定）:
+找到并记住最大的值的位置，和最后一个数交换（或找到并记住最小的值的位置，和第一个数交换）
+不稳定的原因：若数中有..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xuan0209.github.io">
+        <img src="https://xuan0209.github.io/images/avatar.png?v=1751705639248" class="site-logo">
+        <h1 class="site-title">伤感小巫神</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            笔记
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            伤感小巫神
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      原神抽卡别歪啊，10连3金缠上我
+    </div>
+    <div class="site-footer">
+      友情链接 <a href="https://home.zhikulego.cn" target="_blank">智库乐高</a> | <a class="rss" href="https://xuan0209.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">C++中常见的排序方法</h2>
+            <div class="post-date">2025-01-13</div>
+            
+              <div class="feature-container" style="background-image: url('https://xuan0209.github.io/post-images/czhong-chang-jian-de-3-pai-xu-fang-fa.webp')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>冒泡排序法（稳定）:<br>
+例如：3214<br>
+第一趟：2134<br>
+第二趟：1234<br>
+稳定：稳定的是不打乱数的次序</p>
+<p>选择排序法(不稳定）:<br>
+找到并记住最大的值的位置，和最后一个数交换（或找到并记住最小的值的位置，和第一个数交换）<br>
+不稳定的原因：若数中有两个相同的数，会打乱数的位置</p>
+<p>插入排序法（稳定）:<br>
+定义一个计数器来统计一共输入多少个数<br>
+一边输入一边排序，输入的数从后向前来比较大小，找合适的位置插入<br>
+有时插入排序法比冒泡排序法和选择排序法效率更高<br>
+归并排序:<br>
+将大数先分成两半，前半段调用自己并排序，后半段排序，最后将排序好的第一段和第二段合并，合并成排序正确的一二段</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xuan0209.github.io/post/jie-gou-lei-xing/">
+                  <h3 class="post-title">
+                    结构类型
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

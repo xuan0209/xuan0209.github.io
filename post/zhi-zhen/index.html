@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>指针 | 伤感小巫神</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xuan0209.github.io/favicon.ico?v=1751705639248">
+<link rel="stylesheet" href="https://xuan0209.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="重点：数组名代表一个指向数组类型的指针常量
+一.指针的基本概念:
+1.指针是一个变量，用于存储另一个变量的内存地址。通过指针，我们可以访问和操作存储在该内存地址中的数据。
+2.指针的大小是固定的，在32位平台上通常是4字节，在64位平台上通..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xuan0209.github.io">
+        <img src="https://xuan0209.github.io/images/avatar.png?v=1751705639248" class="site-logo">
+        <h1 class="site-title">伤感小巫神</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            笔记
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            伤感小巫神
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      原神抽卡别歪啊，10连3金缠上我
+    </div>
+    <div class="site-footer">
+      友情链接 <a href="https://home.zhikulego.cn" target="_blank">智库乐高</a> | <a class="rss" href="https://xuan0209.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">指针</h2>
+            <div class="post-date">2025-03-15</div>
+            
+              <div class="feature-container" style="background-image: url('https://xuan0209.github.io/post-images/zhi-zhen.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>重点：数组名代表一个指向数组类型的指针常量<br>
+一.指针的基本概念:<br>
+1.指针是一个变量，用于存储另一个变量的内存地址。通过指针，我们可以访问和操作存储在该内存地址中的数据。<br>
+2.指针的大小是固定的，在32位平台上通常是4字节，在64位平台上通常是8字节</p>
+<p>二.指针的类型:<br>
+1.指针是有类型的，其类型决定了它所指向的变量的类型。例如，int<em>表示指向整数的指针，char</em>表示指向字符的指针。<br>
+2.指针类型的大小是固定的，与它所指向的变量类型无关。也就是说，无论是int*、float*还是其他类型的指针，它们在内存中所占用的空间大小都是一样的</p>
+<p>三.指针的操作:<br>
+1.声明与初始化:<br>
+使用<em>号来声明一个指针变量，并使用&amp;号来获取一个变量的地址进行初始化。例如，int <em>ptr; int num = 10; ptr = #<br>
+2.解引用:<br>
+通过</em>号来访问指针所指向的变量的值。例如，如果ptr是一个指向整数的指针，并且已经初始化为指向某个整数变量num，那么</em>ptr就表示该整数变量的值<br>
+3.算术运算:<br>
+指针可以进行加法和减法运算，用于移动指针的位置。指针的加减运算是以它所指向的数据类型所占用的字节数为单位进行的。例如，如果ptr是一个指向整的指针			     （	假设整数占4个字节），那么ptr+1就表示将指针向前移动4个字节的位置<br>
+四.指针与数组的关系:			     			<br>
+1.数组名实际上是一个指向数组首元素的指针常量。因此，可以使用指针来访问数组中的元素<br>
+2.可以使用指针遍历数组。例如，对于数组arr和指针ptr（已指向数组首元素），可以通过*(ptr+i)来访问数组中的第i个元素<br>
+五.指针与函数的关系:<br>
+1.函数的参数可以是指针类型，这样可以在函数内部修改外部变量的值。因为函数参数传递的是值的副本，但如果是指针作为参数，则可以在函数内部通过解引用来修改		     原始变量的值<br>
+2.函数也可以返回指针类型的值，返回局部变量的地址是一种常见的用法，但需要注意局部变量的作用域和生命周期问题</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xuan0209.github.io/post/er-jin-zhi-bian-ma/">
+                  <h3 class="post-title">
+                    二进制编码
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

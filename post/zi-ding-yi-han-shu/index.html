@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>自定义函数 | 伤感小巫神</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xuan0209.github.io/favicon.ico?v=1751705639248">
+<link rel="stylesheet" href="https://xuan0209.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="void output（int n）
+vodi返回类型(也叫空类型）
+output变量名字
+int n 参数表，可无  int是参数类型   n是参数名
+标字符规定：不能是数字，符号，下划线
+编程中一定范围内不能有重名变量
+在声明参数时：都..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xuan0209.github.io">
+        <img src="https://xuan0209.github.io/images/avatar.png?v=1751705639248" class="site-logo">
+        <h1 class="site-title">伤感小巫神</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            笔记
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            伤感小巫神
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      原神抽卡别歪啊，10连3金缠上我
+    </div>
+    <div class="site-footer">
+      友情链接 <a href="https://home.zhikulego.cn" target="_blank">智库乐高</a> | <a class="rss" href="https://xuan0209.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">自定义函数</h2>
+            <div class="post-date">2024-12-28</div>
+            
+              <div class="feature-container" style="background-image: url('https://xuan0209.github.io/post-images/zi-ding-yi-han-shu.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>void output（int n）<br>
+vodi返回类型(也叫空类型）<br>
+output变量名字<br>
+int n 参数表，可无  int是参数类型   n是参数名<br>
+标字符规定：不能是数字，符号，下划线<br>
+编程中一定范围内不能有重名变量<br>
+在声明参数时：都要有参数类型和参数名  例如:(int a,b)(错误）   （int a）（int b）（正确）<br>
+return 表达式；（不能是void）<br>
+void add（int x）{<br>
+x++；<br>
+}<br>
+int main(){<br>
+int a=5;<br>
+add(a);//a==5<br>
+rerutn 0;<br>
+}<br>
+执行add（a)之后，a的值仍然为5而不是6</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xuan0209.github.io/post/sort-pai-xu-i/">
+                  <h3 class="post-title">
+                    sort排序
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

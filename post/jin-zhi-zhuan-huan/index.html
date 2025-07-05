@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>进制转换 | 伤感小巫神</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xuan0209.github.io/favicon.ico?v=1751705639248">
+<link rel="stylesheet" href="https://xuan0209.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="十进制转？进制 短除法： 例如十进制数 52，我们可以用如下的方式计算它的二进制表示:
+	2| 52
+	  ------
+	  2| 26   ..........0
+	   ------
+	    2| 13   ..........0
+..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xuan0209.github.io">
+        <img src="https://xuan0209.github.io/images/avatar.png?v=1751705639248" class="site-logo">
+        <h1 class="site-title">伤感小巫神</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            笔记
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            伤感小巫神
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      原神抽卡别歪啊，10连3金缠上我
+    </div>
+    <div class="site-footer">
+      友情链接 <a href="https://home.zhikulego.cn" target="_blank">智库乐高</a> | <a class="rss" href="https://xuan0209.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">进制转换</h2>
+            <div class="post-date">2025-02-07</div>
+            
+              <div class="feature-container" style="background-image: url('https://xuan0209.github.io/post-images/jin-zhi-zhuan-huan.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>十进制转？进制 短除法： 例如十进制数 52，我们可以用如下的方式计算它的二进制表示:</p>
+<pre><code>	2| 52
+	  ------
+	  2| 26   ..........0
+	   ------
+	    2| 13   ..........0
+	      ------
+	      2|  6   ..........1
+	       ------
+	        2|  3   ..........0
+	          ------
+	          2|  1   ..........1
+	            ------
+	            2|  0   ..........1
+	             ------
+</code></pre>
+<p>每次用当前的数除以 2，得出商和余数，将商写在下方，余数写在右方。最后将右方的所有余数倒序排列，(110100)，(我们往往用(.)x的方式来表示 X进制数)就是 52 的二进制表示。</p>
+<p>？进制转十进制 按权相加法： 将 X进制转换为十进制的方法相对来说更通用一些，例如，对于(100101),，我们可以用如下的方式进行进制转换:</p>
+<p>（100101）2= 1<em>2的五次方 + 0</em>2的四次方 + 0<em>2的三次方 + 1</em>2的二次方 + 0<em>2的一次方 + 1</em>2的零次方</p>
+<p>本质上就是算出每个X进制位上的值实际上是多少，累加得出最终的结果。</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xuan0209.github.io/post/chang-yong-de-shu-xue-zong-jie/">
+                  <h3 class="post-title">
+                    常用的数学总结
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>

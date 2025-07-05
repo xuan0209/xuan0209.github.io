@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >
+
+<title>链表 | 伤感小巫神</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://xuan0209.github.io/favicon.ico?v=1751705639248">
+<link rel="stylesheet" href="https://xuan0209.github.io/styles/main.css">
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+
+
+    <meta name="description" content="一.基本概念
+1.链表是一种物理存储单元上非连续、非顺序的存储结构，数据元素的逻辑顺序通过链表中的指针链接次序实现。
+2.链表由一系列结点组成，每个结点包含存储数据元素的数据域和存储下一个结点地址的指针域。
+二.链表类型
+1.单链表：每个结..." />
+    <meta name="keywords" content="" />
+  </head>
+  <body>
+    <div id="app" class="main">
+
+      <div class="sidebar" :class="{ 'full-height': menuVisible }">
+  <div class="top-container" data-aos="fade-right">
+    <div class="top-header-container">
+      <a class="site-title-container" href="https://xuan0209.github.io">
+        <img src="https://xuan0209.github.io/images/avatar.png?v=1751705639248" class="site-logo">
+        <h1 class="site-title">伤感小巫神</h1>
+      </a>
+      <div class="menu-btn" @click="menuVisible = !menuVisible">
+        <div class="line"></div>
+      </div>
+    </div>
+    <div>
+      
+        
+          <a href="/" class="site-nav">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="site-nav">
+            笔记
+          </a>
+        
+      
+        
+          <a href="/tags" class="site-nav">
+            伤感小巫神
+          </a>
+        
+      
+        
+          <a href="/post/about" class="site-nav">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+  <div class="bottom-container" data-aos="flip-up" data-aos-offset="0">
+    <div class="social-container">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    </div>
+    <div class="site-description">
+      原神抽卡别歪啊，10连3金缠上我
+    </div>
+    <div class="site-footer">
+      友情链接 <a href="https://home.zhikulego.cn" target="_blank">智库乐高</a> | <a class="rss" href="https://xuan0209.github.io/atom.xml" target="_blank">RSS</a>
+    </div>
+  </div>
+</div>
+
+
+      <div class="main-container">
+        <div class="content-container" data-aos="fade-up">
+          <div class="post-detail">
+            <h2 class="post-title">链表</h2>
+            <div class="post-date">2025-03-29</div>
+            
+              <div class="feature-container" style="background-image: url('https://xuan0209.github.io/post-images/lian-biao.jpg')">
+              </div>
+            
+            <div class="post-content" v-pre>
+              <p>一.基本概念<br>
+1.链表是一种物理存储单元上非连续、非顺序的存储结构，数据元素的逻辑顺序通过链表中的指针链接次序实现。<br>
+2.链表由一系列结点组成，每个结点包含存储数据元素的数据域和存储下一个结点地址的指针域。<br>
+二.链表类型<br>
+1.单链表：每个结点只包含一个指针域，指向下一个结点。单链表只能表示单向的逻辑关系，如任务列表等。<br>
+2.双链表：在单链表的每个结点再增加一个指向前驱结点的指针域，可以更轻松地实现如双向遍历等操作。<br>
+3.循环链表：将单链表中终端结点的指针域由空变为指向头结点，使整个链表构成一个环形结构，可从任一结点开始遍历整个链表。<br>
+三.链表操作<br>
+1.插入：包括头部插入、尾部插入、指定位置插入等。插入时需先找到插入位置的前驱结点，然后修改相关指针指向。<br>
+2.删除：有删除头部结点、删除尾部结点、删除指定结点等操作。删除结点时需先找到待删除结点的前驱结点，然后修改前驱结点的指针域，并释放被删除结点的内存空间。<br>
+3.查找：按值查找、按位置查找等是常见的查找方式。查找时需从表头开始，逐个比较结点的值或位置，直到找到目标结点或遍历完整个链表。<br>
+4.遍历：从表头开始，依次访问每个结点并进行相应操作，直到到达链表末尾。<br>
+四.内存管理<br>
+1.链表的每个结点通常使用动态内存分配（如new操作符）来创建，因此在删除结点时需使用delete操作符来释放内存，以防止内存泄漏</p>
+
+            </div>
+            
+            
+              <div class="next-post">
+                <div class="next">下一篇</div>
+                <a href="https://xuan0209.github.io/post/zhi-zhen/">
+                  <h3 class="post-title">
+                    指针
+                  </h3>
+                </a>
+              </div>
+            
+
+            
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="application/javascript">
+
+AOS.init();
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+
+
+  </body>
+</html>
